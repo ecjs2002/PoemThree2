@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/backimg"
+    android:id="@+id/linear">
+    <!--android:background="@drawable/pastel2"-->
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="메 뉴"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_tuto"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:clickable="true"
+            android:onClick="clickTutorial"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:id="@+id/iv_board"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:clickable="true"
+            android:onClick="clickBoard"
+            android:layout_below="@+id/iv_tuto"
+            android:layout_toEndOf="@+id/iv_tuto" />
+
+        <ImageView
+            android:id="@+id/iv_glory"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:clickable="true"
+            android:onClick="clickGlory"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:id="@+id/iv_gamego"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:clickable="true"
+            android:onClick="clickGo"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

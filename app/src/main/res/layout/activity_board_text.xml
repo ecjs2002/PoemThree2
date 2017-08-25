@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/pastel2"
+    tools:context="com.fireegg1991.poemthree.BoardTextActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/word1"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:text=""
+            android:textSize="40sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/word2"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:text=""
+            android:textSize="40sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/word3"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:text=""
+            android:textSize="40sp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:onClick="clickAns1">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text=""
+                android:textSize="40sp"
+                android:gravity="center" />
+
+            <TextView
+
+                android:id="@+id/ans1"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textSize="28sp"
+                android:text="click"
+                android:layout_marginLeft="4dp" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:onClick="clickAns2">
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text=""
+                android:textSize="40sp"
+                android:gravity="center"
+                />
+
+            <TextView
+
+                android:id="@+id/ans2"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textSize="28sp"
+                android:text="click"
+                android:layout_marginLeft="4dp"
+               />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:onClick="clickAns3">
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text=""
+                android:textSize="40sp"
+                android:gravity="center"/>
+
+            <TextView
+
+                android:id="@+id/ans3"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textSize="28sp"
+                android:text="click"
+                android:layout_marginLeft="4dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/like"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:clickable="true"
+            android:onClick="clickLike"/>
+
+        <TextView
+            android:id="@+id/like_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_marginTop="8dp"
+            android:textSize="28sp"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/back"
+                android:layout_marginLeft="32dp"
+                android:onClick="clickBack"/>
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/next"
+                android:layout_marginLeft="120dp"
+                android:onClick="clickNext"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

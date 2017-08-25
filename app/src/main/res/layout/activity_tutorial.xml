@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/back_img01">
+
+    <ImageView
+        android:id="@+id/tuto_img"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_launcher"/>
+
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="350dp"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center"
+            android:text="1. 랜덤으로 주어지는 세글자의 제시어로 삼행시를 작성합니다.\n\n2. 처음 삐 소리와 함께 음성인식을 시작합니다.\n\n3. 삼행시를 음성으로 작성하여 게시판에 업로드 합니다.\n\n4. 게시판에 올라간 삼행시를 다른 유저들이 평가합니다. \n\n5. 한달간 다른 유저들이 평가하여 좋아요가 가장 많은 세개의 삼행시가 명예의 전당에 등록됩니다.\n"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="4dp"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="108dp"
+            android:layout_height="128dp"
+            android:layout_marginLeft="48dp"
+            android:clickable="true"
+            android:onClick="clickBack"/>
+
+        <ImageView
+            android:id="@+id/iv_next"
+            android:layout_width="108dp"
+            android:layout_height="128dp"
+            android:clickable="true"
+            android:onClick="clickNext"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
